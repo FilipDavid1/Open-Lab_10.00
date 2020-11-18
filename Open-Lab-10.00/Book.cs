@@ -24,7 +24,7 @@ namespace Open_Lab_10._00
            get => this.pages;
            set
            {
-               if (pages < 1)
+               if (value< 1)
                {
                    pages = 1;
                }
@@ -54,7 +54,7 @@ namespace Open_Lab_10._00
            get => this.releaseDate;
            set
            {
-               if (releaseDate < 1450 || releaseDate > 2020)
+               if (value < 1450 || value > 2020)
                {
                    releaseDate = -1;
                }
@@ -65,7 +65,7 @@ namespace Open_Lab_10._00
            }
        }
 
-
+      
 
         public void Show()
         {
