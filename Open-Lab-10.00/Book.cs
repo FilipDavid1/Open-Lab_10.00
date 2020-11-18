@@ -64,8 +64,33 @@ namespace Open_Lab_10._00
                }
            }
        }
+       
+       public Book()
+       {
+           title = "-1";
+           pages = -1;
+           category = "-1";
+           author = "-1";
+           releaseDate = -1;
+       }
 
-      
+       public Book(string title, int pages)
+       {
+           Title = title;
+           Pages = pages;
+           category = "-1";
+           author = "-1";
+           releaseDate = -1;
+        }
+
+       public Book(string title, int pages, string category, string author, int releaseDate)
+       {
+           Title = title;
+           Pages = pages;
+           Category = category;
+           Author = author;
+           ReleaseDate = releaseDate;
+       }
 
         public void Show()
         {
@@ -74,6 +99,7 @@ namespace Open_Lab_10._00
             Console.WriteLine("category:" + category);
             Console.WriteLine("author:" + author);
             Console.WriteLine("releaseDate:" + releaseDate);
+            Console.WriteLine(" ");
         }
 
     }
