@@ -8,11 +8,11 @@ namespace Open_Lab_10._00
         {
            Book Lotr = new Book();
            
-           Lotr.SetTitle("Vychytávky Ladi Hrusky");
-           Lotr.SetPages(800);
-           Lotr.SetCategory("vychytavky");
-           Lotr.SetAuthor("Lada Hruska");
-           Lotr.SetReleaseDate(2018);
+           Lotr.Title = "Vychytávky Ladi Hrusky";
+           Lotr.Pages = 800;
+           Lotr.Category = "vychytavky";
+           Lotr.Author = "Lada Hruska";
+           Lotr.ReleaseDate = 2018;
 
            Lotr.Show();
 

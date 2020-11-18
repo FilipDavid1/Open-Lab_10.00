@@ -12,26 +12,60 @@ namespace Open_Lab_10._00
         private string author;
         private int releaseDate;
 
-        public void SetTitle(string t)
-        { 
-            title = t;
-        }
-        public void SetPages(int p)
+        public string Title
         {
-            pages = p;
+            get => title;
+
+            set => title = value;
         }
-        public void SetCategory(string c)
-        {
-            category = c;
+
+       public int Pages
+       {
+           get => this.pages;
+           set
+           {
+               if (pages < 1)
+               {
+                   pages = 1;
+               }
+               else
+               {
+                   pages = value;
+               }
+           }
+       }
+
+       public string Category
+       {
+           get => category;
+
+           set => category = value;
         }
-        public void SetAuthor(string a)
-        {
-            author = a;
+
+       public string Author
+       {
+           get => author;
+
+           set => author = value;
         }
-        public void SetReleaseDate(int r)
-        {
-            releaseDate = r;
-        }
+
+       public int ReleaseDate
+       {
+           get => this.releaseDate;
+           set
+           {
+               if (releaseDate < 1450 || releaseDate > 2020)
+               {
+                   releaseDate = -1;
+               }
+               else
+               {
+                   releaseDate = value;
+               }
+           }
+       }
+
+
 
         public void Show()
         {
