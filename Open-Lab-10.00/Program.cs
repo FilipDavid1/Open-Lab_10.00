@@ -7,6 +7,7 @@ namespace Open_Lab_10._00
         static void Main(string[] args)
         {
             Console.WriteLine("Hello OOP worlld!");
+            Console.WriteLine("Hello OOP worlld!");
 
         }
     }
