@@ -11,6 +11,10 @@ namespace Open_Lab_10._00
         private string category;
         private string author;
         private int releaseDate;
+        /// <summary>
+        /// Creates list of categories for books.
+        /// </summary>
+        public static List<string> categoryList = new List<string>(){ "detské", "romantické", "náučné", "sci-fi", "dobrodružné" };
 
         public string Title
         {
@@ -37,7 +41,7 @@ namespace Open_Lab_10._00
 
        public string Category
        {
-           get => category;
+          
 
            set => category = value;
         }
@@ -91,6 +95,7 @@ namespace Open_Lab_10._00
            Author = author;
            ReleaseDate = releaseDate;
        }
+
 
         public void Show()
         {

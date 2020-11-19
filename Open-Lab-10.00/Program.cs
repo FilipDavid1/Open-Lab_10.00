@@ -24,7 +24,7 @@ namespace Open_Lab_10._00
 
            Lotr3.Show();
 
-           Book Hobit = new Book("Vrzdosi", 352, "pre deti", "Tom Fletcher", 2018);
+           Book Hobit = new Book("Vrzdosi", 352, Book.categoryList[0], "Tom Fletcher", 2018);
 
            Hobit.Show();
         }
